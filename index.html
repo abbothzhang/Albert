@@ -1,23 +1,12 @@
 ---
-layout: default
+layout: index
+title: JackRex HomePage
 ---
 
-<div class="home">
+<article id="post__content">
+  <h1 id="post__title">Hello Jackrex</h1>
+  <h2>Life is to be Explored</h2>
+  <h2>Ignite your life Everyday </h2>
+  <div class="mobile-background-container"><img src="http://d13pix9kaak6wt.cloudfront.net/background/users/j/a/c/jackrex_1372349467_38.jpg" class="mobile-bg-test-img" alt="Jack rex" /></div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</article> <!-- end #post__content -->
